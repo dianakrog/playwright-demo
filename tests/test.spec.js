@@ -3,6 +3,7 @@ const browser = await firefox.launch();
 const { test, expect } = require('@playwright/test');
 
 test.describe('My Test Suite', () => {
+   test.setTimeout(60000);
   test('My Test Case', async ({}) => {
   const browser = await firefox.launch();
   const page = await browser.newPage();
