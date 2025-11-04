@@ -1,9 +1,10 @@
 const { chromium } = require('playwright');
+const browser = await firefox.launch();
 const { test, expect } = require('@playwright/test');
 
 test.describe('My Test Suite', () => {
   test('My Test Case', async ({}) => {
-  const browser = await chromium.launch();
+  const browser = await firefox.launch();
   const page = await browser.newPage();
   
   await authenticate(page);
@@ -24,7 +25,3 @@ async function authenticate(page) {
     console.error("The authentication was not successful!")
   await page.screenshot({ path: 'screenshot.png' });
 }
-
-
-
-
