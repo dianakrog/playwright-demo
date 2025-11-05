@@ -1,0 +1,10 @@
+config:
+  target: "https://www.bitheap.tech"
+  engines:
+    playwright: {}
+  processors: "./tests/flows.js"
+scenarios:
+  - name: Shop Flow Test
+    engine: playwright
+    flow:
+      - function: shopFlow
