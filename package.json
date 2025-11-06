@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ai-visual-tester": "^1.0.2",
     "playwright": "^1.39.0"
   },
   "devDependencies": {
